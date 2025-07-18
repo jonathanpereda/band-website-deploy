@@ -1,0 +1,17 @@
+# Frontend (React/Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.DS_Store
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Backend (Flask, later)
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
