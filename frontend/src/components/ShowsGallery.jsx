@@ -115,7 +115,7 @@ function ShowsGallery() {
             )}
             <div
                 ref={scrollRef} 
-                className="flex overflow-x-auto space-x-4 p-4 bg-black scrollbar-hide snap-x snap-mandatory scroll-pl-2"
+                className="flex overflow-x-auto space-x-4 p-4 rounded-lg bg-[#0f1720] scrollbar-hide snap-x snap-mandatory scroll-pl-2"
             >
                 {/*Pull flyers from array*/}
                  {flyers.map((flyer, index) => (
