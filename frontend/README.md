@@ -15,6 +15,9 @@ embeded songs and videos, a contact form, photo gallaries and mobile compatabili
 
 - Responsive layout
 - Show Flyer Gallery
+- Annoucement list
+- Spotify embed
+- Footer with socials icon links
 
 ## Getting Started
 
