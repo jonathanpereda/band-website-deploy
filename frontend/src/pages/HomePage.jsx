@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <div className="p-6 text-white">
       <h2 className="text-2xl font-semibold mb-4">NEWS</h2>
-      <p>Up coming shows:</p>
+      <p>Upcoming shows:</p>
       <ShowsGallery />
     </div>
   );

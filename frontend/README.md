@@ -14,7 +14,7 @@ embeded songs and videos, a contact form, photo gallaries and mobile compatabili
 ## Current Features
 
 - Responsive layout
-- Upcoming show gallery (wip)
+- Show Flyer Gallery
 
 ## Getting Started
 
