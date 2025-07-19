@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 function BandLogo(){
     const [isSpinning, setIsSpinning] = useState(true);
     const [useGrow, setUseGrow] = useState(false);
-    const gifSrc = useGrow ? "/logo-grow.gif" : "/logo-spin.gif";
+    const gifSrc = useGrow ? "/AnimatedLogo/logo-grow.gif" : "/AnimatedLogo/logo-spin.gif";
     const SPIN_DURATION = 2000;
     const SPIN_INTERVAL = 4000;
 
@@ -21,7 +21,7 @@ function BandLogo(){
     }, []);
 
     return(
-        <img src={isSpinning ? gifSrc : "/logo-static.tiff"}
+        <img src={isSpinning ? gifSrc : "/AnimatedLogo/logo-static.tiff"}
         alt="Band Logo"
         className="h-28" />
     );

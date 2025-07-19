@@ -6,37 +6,37 @@ function ShowsGallery() {
     //Flyer Array
     const flyers = [
         {
-        src: "swandive-7-12.jpeg",
+        src: "FlyerPhotos/swandive-7-12.jpeg",
         alt: "Swan Dive Flyer",
         cap: "Las Vegas, NV - 7-12-25",
         url: "https://swandivelv.com",
         },
         {
-        src: "transplants-6-12.png",
+        src: "FlyerPhotos/transplants-6-12.png",
         alt: "Transplants Flyer",
         cap: "Lancaster, CA - 6-12-25",
         url: "https://transplantsbrewing.com",
         },
         {
-        src: "swandive-7-12.jpeg",
+        src: "FlyerPhotos/swandive-7-12.jpeg",
         alt: "Swan Dive Flyer",
         cap: "Las Vegas, NV - 7-12-25",
         url: "https://swandivelv.com",
         },
         {
-        src: "transplants-6-12.png",
+        src: "FlyerPhotos/transplants-6-12.png",
         alt: "Transplants Flyer",
         cap: "Lancaster, CA - 6-12-25",
         url: "https://transplantsbrewing.com",
         },
         {
-        src: "swandive-7-12.jpeg",
+        src: "FlyerPhotos/swandive-7-12.jpeg",
         alt: "Swan Dive Flyer",
         cap: "Las Vegas, NV - 7-12-25",
         url: "https://swandivelv.com",
         },
         {
-        src: "transplants-6-12.png",
+        src: "FlyerPhotos/transplants-6-12.png",
         alt: "Transplants Flyer",
         cap: "Lancaster, CA - 6-12-25",
         url: "https://transplantsbrewing.com",

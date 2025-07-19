@@ -18,6 +18,7 @@ embeded songs and videos, a contact form, photo gallaries and mobile compatabili
 - Annoucement list
 - Spotify embed
 - Footer with socials icon links
+- Gallery page with show photos
 
 ## Getting Started
 

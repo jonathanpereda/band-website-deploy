@@ -11,6 +11,7 @@ function Navbar() {
             <div className="ml-6 mt-1 space-x-4 flex items-center">
                 <Link to="/" className="hover:underline">Home</Link>
                 <Link to="/about" className="hover:underline">About</Link>
+                <Link to="/gallery" className="hover:underline">Gallery</Link>
             </div>
         </div>
     </nav>
