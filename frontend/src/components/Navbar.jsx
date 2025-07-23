@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="bg-[#1A2634] text-white py-6 flex flex-col items-center">
         <BandLogo />
         <div className="mt-4 flex space-x-6">
-            <div className="ml-6 mt-1 space-x-4 flex items-center">
+            <div className="mt-1 space-x-4 flex items-center">
                 <Link to="/" className="hover:underline">Home</Link>
                 <Link to="/about" className="hover:underline">About</Link>
                 <Link to="/gallery" className="hover:underline">Gallery</Link>

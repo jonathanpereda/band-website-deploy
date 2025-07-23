@@ -23,7 +23,7 @@ function BandLogo(){
     return(
         <img src={isSpinning ? gifSrc : "/AnimatedLogo/logo-static.tiff"}
         alt="Band Logo"
-        className="h-28" />
+        className="h-28 -ml-3" />
     );
 
 }
