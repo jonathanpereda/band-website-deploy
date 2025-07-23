@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <div className="p-6 text-white">
       <section>
-        <h2 className="text-2xl font-bold mb-4">-NEWS-</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center">- News -</h2>
         <section>
           <h3 className="ml-4 mb-4 font-semibold">Upcoming shows:</h3>
           <p className="text-sm italic w-fit mx-auto text-center">Click below to view tickets</p>
@@ -19,7 +19,7 @@ function HomePage() {
         </section>
       </section>
       <section>
-        <h2 className="text-2xl font-bold mt-12">-OUR MUSIC-</h2>
+        <h2 className="text-3xl font-bold mt-6 mb-6 text-center">- Our Music -</h2>
         <div className="flex overflow-x-auto space-x-4 p-4 rounded-lg overflow-hidden mt-4">
           <iframe
             style={{ borderRadius: '12px' }}

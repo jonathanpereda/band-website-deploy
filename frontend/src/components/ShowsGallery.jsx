@@ -6,42 +6,34 @@ function ShowsGallery() {
     //Flyer Array
     const flyers = [
         {
-        src: "FlyerPhotos/swandive-7-12.jpeg",
-        alt: "Swan Dive Flyer",
-        cap: "Las Vegas, NV - 7-12-25",
-        url: "https://swandivelv.com",
-        },
-        {
-        src: "FlyerPhotos/transplants-6-12.png",
-        alt: "Transplants Flyer",
-        cap: "Lancaster, CA - 6-12-25",
-        url: "https://transplantsbrewing.com",
+        src: "FlyerPhotos/ComingSoon.jpg",
+        alt: "Coming Soon",
+        cap: "Las Vegas, NV - 9-6-25",
+        url: "",
+        date: "2025-09-06",
         },
         {
         src: "FlyerPhotos/swandive-7-12.jpeg",
         alt: "Swan Dive Flyer",
         cap: "Las Vegas, NV - 7-12-25",
         url: "https://swandivelv.com",
+        date: "2025-07-12",
         },
         {
         src: "FlyerPhotos/transplants-6-12.png",
         alt: "Transplants Flyer",
         cap: "Lancaster, CA - 6-12-25",
         url: "https://transplantsbrewing.com",
-        },
-        {
-        src: "FlyerPhotos/swandive-7-12.jpeg",
-        alt: "Swan Dive Flyer",
-        cap: "Las Vegas, NV - 7-12-25",
-        url: "https://swandivelv.com",
-        },
-        {
-        src: "FlyerPhotos/transplants-6-12.png",
-        alt: "Transplants Flyer",
-        cap: "Lancaster, CA - 6-12-25",
-        url: "https://transplantsbrewing.com",
+        date: "2025-06-12",
         },
     ];
+    //Process if flyer date has already past
+    const today = new Date();
+    const processedFlyers = flyers.map((flyer) => {
+        const showDate = new Date(flyer.date);
+        const hasPast = showDate < today;
+        return { ...flyer, hasPast };
+    });
 
 
     //Handle scrolling
@@ -118,7 +110,7 @@ function ShowsGallery() {
                 className="flex overflow-x-auto space-x-4 p-4 rounded-lg bg-[#0f1720] scrollbar-hide snap-x snap-mandatory scroll-pl-2"
             >
                 {/*Pull flyers from array*/}
-                 {flyers.map((flyer, index) => (
+                {processedFlyers.map((flyer, index) => (
                     <a
                     key={index}
                     href={flyer.url}
@@ -130,7 +122,11 @@ function ShowsGallery() {
                             <img
                                 src={flyer.src}
                                 alt={flyer.alt}
-                                className="h-64 sm:h-64 flex-shrink-0 rounded transition-transform duration-200 hover:scale-105"
+                                className={`h-64 sm:h-64 flex-shrink-0 rounded transition-transform duration-200 ${
+                                flyer.hasPast
+                                ? 'grayscale opacity-50 hover:scale-100 cursor-default'
+                                : 'hover:scale-105'
+                                }`}
                             />
                             {/*Captions*/}
                             <div className="absolute bottom-0 left-0 right-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded">
