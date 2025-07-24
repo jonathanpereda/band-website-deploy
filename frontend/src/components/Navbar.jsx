@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 import BandLogo from './BandLogo';
 
-//<h1 className="text-xl font-bold">Stolen Street Signs</h1>
-
 function Navbar() {
   return (
-    <nav className="bg-[#1A2634] text-white py-6 flex flex-col items-center">
+    <>
+      <div className="bg-[#1f2a38]/80 backdrop-blur-md py-6 flex justify-center">
         <BandLogo />
-        <div className="mt-4 flex space-x-6">
-            <div className="mt-1 space-x-4 flex items-center">
-                <Link to="/" className="hover:underline">Home</Link>
-                <Link to="/about" className="hover:underline">About</Link>
-                <Link to="/gallery" className="hover:underline">Gallery</Link>
-            </div>
+      </div>
+      <nav className="sticky top-0 z-50 bg-[#1f2a38]/80 backdrop-blur-md text-white shadow-md">
+        <div className="flex justify-center gap-6 py-4">
+          <Link to="/" className="hover:underline">Home</Link>
+          <Link to="/about" className="hover:underline">About</Link>
+          <Link to="/gallery" className="hover:underline">Gallery</Link>
         </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 

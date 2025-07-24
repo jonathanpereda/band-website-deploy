@@ -3,6 +3,7 @@ import ShowsGallery from "../components/ShowsGallery.jsx";
 function HomePage() {
   return (
     <div className="p-6 text-white">
+      <h1 className="sr-only">Stolen Street Signs</h1>
       <section>
         <h2 className="text-3xl font-bold mb-6 text-center">- News -</h2>
         <section>

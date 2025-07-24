@@ -68,6 +68,11 @@ function ShowsGallery() {
         const container = scrollRef.current;
         if (!container) return;
 
+        //Reset to left edge
+        requestAnimationFrame(() => {
+            container.scrollLeft = 0;
+        });
+
         const handleScroll = () => {
             const { scrollLeft, scrollWidth, clientWidth } = container;
 
@@ -106,8 +111,9 @@ function ShowsGallery() {
                 </button>
             )}
             <div
+                //Box holding flyers
                 ref={scrollRef} 
-                className="flex overflow-x-auto space-x-4 p-4 rounded-lg bg-[#0f1720] scrollbar-hide snap-x snap-mandatory scroll-pl-2"
+                className="flex overflow-x-auto space-x-4 p-5 rounded-lg shadow-inner shadow-black/50 bg-[#17222f] scrollbar-hide snap-x snap-mandatory scroll-pl-2"
             >
                 {/*Pull flyers from array*/}
                 {processedFlyers.map((flyer, index) => (
@@ -116,9 +122,11 @@ function ShowsGallery() {
                     href={flyer.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 snap-start"
+                    className={`flex-shrink-0 snap-start transition-transform duration-200 ${
+                        flyer.hasPast ? 'cursor-default' : 'hover:scale-105'}
+                    }`}
                     >
-                        <div className="relative group">
+                        <div className="relative group shadow-xl shadow-black/50 transition-shadow duration-300 hover:shadow-2xl hover:shadow-black/90 rounded overflow-hidden">
                             {/*Mark past shows*/}
                             {flyer.hasPast && (
                                 <div className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded shadow-md">
@@ -129,14 +137,14 @@ function ShowsGallery() {
                             <img
                                 src={flyer.src}
                                 alt={flyer.alt}
-                                className={`h-64 sm:h-64 flex-shrink-0 rounded transition-transform duration-200 ${
+                                className={`h-64 sm:h-64 flex-shrink-0 ${
                                 flyer.hasPast
-                                ? 'grayscale opacity-50 hover:scale-100 cursor-default'
-                                : 'hover:scale-105'
+                                ? 'grayscale opacity-50 cursor-default'
+                                : ''
                                 }`}
                             />
                             {/*Captions*/}
-                            <div className="absolute bottom-0 left-0 right-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded">
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <span className="text-white text-center px-2 text-sm sm:text-base font-semibold">
                                 {flyer.cap}
                                 </span>
