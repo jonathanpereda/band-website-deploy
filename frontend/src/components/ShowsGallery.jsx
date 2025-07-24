@@ -119,6 +119,13 @@ function ShowsGallery() {
                     className="flex-shrink-0 snap-start"
                     >
                         <div className="relative group">
+                            {/*Mark past shows*/}
+                            {flyer.hasPast && (
+                                <div className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded shadow-md">
+                                    PAST SHOW
+                                </div>
+                            )}
+                            {/*Flyer Img*/}
                             <img
                                 src={flyer.src}
                                 alt={flyer.alt}
