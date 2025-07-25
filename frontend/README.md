@@ -20,6 +20,7 @@ embeded songs and videos, a contact form, photo gallaries and mobile compatabili
 - Footer with socials icon links
 - Gallery page with show photos
 - About page with band member description and photos
+- Contact Us page 
 
 ## Getting Started
 

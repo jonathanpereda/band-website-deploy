@@ -12,6 +12,7 @@ function Navbar() {
           <Link to="/" className="hover:underline">Home</Link>
           <Link to="/about" className="hover:underline">About</Link>
           <Link to="/gallery" className="hover:underline">Gallery</Link>
+          <Link to="/contactus" className="hover:underline">Contact Us</Link>
         </div>
       </nav>
     </>
