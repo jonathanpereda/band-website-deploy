@@ -2,7 +2,7 @@ import {FaInstagram, FaTiktok, FaSpotify, FaYoutube, FaApple, FaItunes } from "r
 
 function Footer() {
     return(
-        <footer className="bg-black text-white py-4 flex justify-center gap-6">
+        <footer className="bg-darkest text-white py-4 flex justify-center gap-6">
             <a href="https://www.instagram.com/stolenstreetsigns?igsh=MXdtcXJiOTk1aDYxag==" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={28} className="hover:text-pink-500 transition duration-200" />
             </a>

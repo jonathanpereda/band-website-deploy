@@ -8,14 +8,78 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#000000',  //Background
-        offwhite: '#F1ECE8',    //Secondary background
-        darkblue: '#1A2634',    //Third background
-        maroon: '#4D0000',      //Dark red
-        cream: '#FFE6CC',       //Text
-        rust: '#991B1B',        //Hover and accents
-      }
-    }
+        bone: '#E6DED0',
+        sand: '#E2C49A',
+        chest: '#A4472D',
+        frontground: '#27282B',
+        background: '#1C1D20',
+        dark: '#151619',
+        darkest: '#111114',
+      },
+      fontFamily: {
+        heading: ['"HVD Peace"', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        display: ['"Titillium Web"', 'sans-serif'],
+        body: ['"Highway Gothic"', 'sans-serif'],
+        bodywide: ['"Highway Gothic Wide"', 'sans-serif'],
+      },
+      keyframes: {
+        shadowLeftSpin: {
+          '0%':   { transform: 'scaleX(1)',     filter: 'blur(12px)' },
+          '6%':   { transform: 'scaleX(0.95)',  filter: 'blur(11.5px)' },
+          '12%':  { transform: 'scaleX(0.78)',  filter: 'blur(10.5px)' },
+          '18%':  { transform: 'scaleX(0.6)',   filter: 'blur(9.2px)' },
+          '22%':  { transform: 'scaleX(0.4)',   filter: 'blur(8.5px)' },
+          '26%':  { transform: 'scaleX(0.2)',   filter: 'blur(8px)' },
+          '30%':  { transform: 'scaleX(0.32)',  filter: 'blur(8.5px)' },
+          '35%':  { transform: 'scaleX(0.6)',   filter: 'blur(9.2px)' },
+          '44%':  { transform: 'scaleX(0.78)',  filter: 'blur(10.5px)' },
+          '50%':  { transform: 'scaleX(1)',     filter: 'blur(12px)' },
+          '58%':  { transform: 'scaleX(0.85)',  filter: 'blur(11px)' },
+          '63%':  { transform: 'scaleX(0.6)',   filter: 'blur(10px)' },
+          '67%':  { transform: 'scaleX(0.35)',  filter: 'blur(9px)' },
+          '70%':  { transform: 'scaleX(0.2)',   filter: 'blur(8px)' },
+          '74%':  { transform: 'scaleX(0.26)',  filter: 'blur(8.2px)' },
+          '78%':  { transform: 'scaleX(0.4)',   filter: 'blur(9px)' },
+          '82%':  { transform: 'scaleX(0.6)',   filter: 'blur(9.5px)' },
+          '88%':  { transform: 'scaleX(0.78)',  filter: 'blur(10.5px)' },
+          '100%': { transform: 'scaleX(1)',     filter: 'blur(12px)' },
+        },
+        shadowRightSpin: {
+          '0%':   { transform: 'scaleX(1)',     filter: 'blur(12px)' },
+          '6%':   { transform: 'scaleX(0.94)',  filter: 'blur(11.5px)' },
+          '12%':  { transform: 'scaleX(0.76)',  filter: 'blur(10.5px)' },
+          '18%':  { transform: 'scaleX(0.56)',  filter: 'blur(9.5px)' },
+          '22%':  { transform: 'scaleX(0.35)',  filter: 'blur(8.5px)' },
+          '26%':  { transform: 'scaleX(0.2)',   filter: 'blur(8px)' },
+          '30%':  { transform: 'scaleX(0.32)',  filter: 'blur(8.5px)' },
+          '35%':  { transform: 'scaleX(0.56)',  filter: 'blur(9.5px)' },
+          '44%':  { transform: 'scaleX(0.76)',  filter: 'blur(10.5px)' },
+          '50%':  { transform: 'scaleX(1)',     filter: 'blur(12px)' },
+          '58%':  { transform: 'scaleX(0.85)',  filter: 'blur(11px)' },
+          '63%':  { transform: 'scaleX(0.6)',   filter: 'blur(10px)' },
+          '67%':  { transform: 'scaleX(0.35)',  filter: 'blur(9px)' },
+          '70%':  { transform: 'scaleX(0.2)',   filter: 'blur(8px)' },
+          '74%':  { transform: 'scaleX(0.25)',  filter: 'blur(8.2px)' },
+          '78%':  { transform: 'scaleX(0.4)',   filter: 'blur(9px)' },
+          '82%':  { transform: 'scaleX(0.56)',  filter: 'blur(9.5px)' },
+          '88%':  { transform: 'scaleX(0.76)',  filter: 'blur(10.5px)' },
+          '100%': { transform: 'scaleX(1)',     filter: 'blur(12px)' },
+        },
+        shadowGrow: {
+          '0%, 100%': { transform: 'scale(1)', filter: 'blur(12px)' },
+          '50%': { transform: 'scale(1.085)', filter: 'blur(14px)' },
+        },
+      },
+      animation: {
+        shadowLeftSpin: 'shadowLeftSpin 2s ease-in-out',
+        shadowRightSpin: 'shadowRightSpin 2s ease-in-out',
+        shadowGrow: 'shadowGrow 2s ease-in-out',
+      },
+      perspective: {
+        1000: '1000px', 
+      },
+    },
   },
   plugins: [scrollbarHide],
 }
