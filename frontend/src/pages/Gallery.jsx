@@ -2,6 +2,7 @@ import Masonry from 'react-masonry-css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import HeaderSymbol from '../components/HeaderSymbol';
 
 function Gallery() {
 
@@ -40,7 +41,9 @@ function Gallery() {
                                 inset 0 -4px 8px rgba(0, 0, 0, 0.15)`
                 }}
             >
-                <h1 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">~ Gallery ~</h1>
+                <h1 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">
+                    <HeaderSymbol finalSymbol="~" /> Gallery <HeaderSymbol finalSymbol="~" />
+                </h1>
             </div>
             <div className="p-6">
                 <Masonry

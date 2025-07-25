@@ -1,3 +1,5 @@
+import HeaderSymbol from '../components/HeaderSymbol';
+
 function ContactUs(){
     return(
         <div className="bg-background min-h-screen text-bone">
@@ -9,9 +11,11 @@ function ContactUs(){
                 }}
             >
                 <h1 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">
-                    <span className="mr-2">&dagger;</span> 
-                    Contact Us 
-                    <span className="ml-2 inline-block transform -scale-x-100">&dagger;</span>
+                    <HeaderSymbol finalSymbol="†" />
+                    <span className="mx-2">Contact Us</span>
+                    <span className="inline-block transform -scale-x-100">
+                        <HeaderSymbol finalSymbol="†" />
+                    </span>
                 </h1>
             </div>
             <div className="p-6"></div>

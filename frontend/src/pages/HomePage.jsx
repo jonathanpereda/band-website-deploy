@@ -1,6 +1,15 @@
+import { useState, useEffect } from "react";
 import ShowsGallery from "../components/ShowsGallery.jsx";
+import HeaderSymbol from '../components/HeaderSymbol';
 
 function HomePage() {
+
+  const [headerAnimationDone, setHeaderAnimationDone] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => setHeaderAnimationDone(true), 700); //LINK WITH ANIMATION TIME
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="text-bone">
       <h1 className="sr-only">Stolen Street Signs</h1>
@@ -12,7 +21,9 @@ function HomePage() {
                         inset 0 -4px 8px rgba(0, 0, 0, 0.15)`
           }}
         >
-          <h2 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">- News -</h2>
+          <h2 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">
+            <HeaderSymbol finalSymbol="-" /> News <HeaderSymbol finalSymbol="-" />
+          </h2>
         </div>
         <div className="p-6">
           <section>
@@ -37,21 +48,28 @@ function HomePage() {
                         inset 0 -4px 8px rgba(0, 0, 0, 0.15)`
           }}
         >
-          <h2 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">- Our Music -</h2>
+          <h2 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">
+            <HeaderSymbol finalSymbol="-" /> Our Music <HeaderSymbol finalSymbol="-" />
+          </h2>
         </div>
         <div className="p-6">
           <div className="flex overflow-x-auto space-x-4 p-4 rounded-lg overflow-hidden">
-            <iframe
-              className="shadow-xl shadow-dark/60"
-              style={{ borderRadius: '12px' }}
-              src="https://open.spotify.com/embed/artist/1I74OR8nxi8rT9KeJkPhRu?utm_source=generator&theme=0"
-              width="100%"
-              height="352"
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              allowFullScreen
-              loading="lazy"
-            />
+            {/*Wait to load embed*/}
+            {headerAnimationDone ? (
+              <iframe
+                className="shadow-xl shadow-dark/60"
+                style={{ borderRadius: '12px' }}
+                src="https://open.spotify.com/embed/artist/1I74OR8nxi8rT9KeJkPhRu?utm_source=generator&theme=0"
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            ) : (
+              <div className="h-[352px] w-full bg-dark animate-pulse" />
+            )}
           </div>
         </div>
       </section>

@@ -1,3 +1,5 @@
+import HeaderSymbol from '../components/HeaderSymbol';
+
 function About(){
 
     const bandMembers = [
@@ -36,7 +38,9 @@ function About(){
                         inset 0 -4px 8px rgba(0, 0, 0, 0.15)`
           }}
         >
-            <h1 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">&gt; AbØut &lt;</h1>
+            <h1 className="text-4xl font-heading mt-2 mb-2 text-center text-sand">
+                <HeaderSymbol finalSymbol=">" /> AbØut <HeaderSymbol finalSymbol="<" />
+            </h1>
         </div>
         <div className="p-6">
             <p className="flex justify-center text-xl font-body mb-8 underline">Hello! We are Stolen Street Signs from the city of Las Vegas.</p>
