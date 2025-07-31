@@ -15,7 +15,7 @@ function HomePage() {
       <h1 className="sr-only">Stolen Street Signs</h1>
       <section>
         <div 
-          className="max-w-5xl mx-auto bg-chest/10 backdrop-blur-sm py-2 border-t border-b border-dark/40 pt-2 mb-2"
+          className="mx-auto bg-chest/10 backdrop-blur-sm py-2 border-t border-b border-dark/40 pt-2 mb-2"
           style={{
             boxShadow: `inset 0 4px 12px rgba(0, 0, 0, 0.3),
                         inset 0 -4px 8px rgba(0, 0, 0, 0.15)`
@@ -42,7 +42,7 @@ function HomePage() {
       </section>
       <section>
         <div
-          className="max-w-5xl mx-auto bg-chest/10 backdrop-blur-sm shadow-inner py-2 border-t border-b border-dark/40 pt-2 mb-2"
+          className="mx-auto bg-chest/10 backdrop-blur-sm shadow-inner py-2 border-t border-b border-dark/40 pt-2 mb-2"
           style={{
             boxShadow: `inset 0 4px 12px rgba(0, 0, 0, 0.3),
                         inset 0 -4px 8px rgba(0, 0, 0, 0.15)`

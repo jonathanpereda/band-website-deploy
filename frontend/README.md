@@ -98,6 +98,8 @@ V13:
 Set up and added basic contact form to contact us page.
 V14:
 Added email sending functionality via SendGrid for contact form.
+V15:
+Fixed headers having a max width.
 
 ### Author
 
