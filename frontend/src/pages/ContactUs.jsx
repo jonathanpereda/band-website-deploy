@@ -22,6 +22,13 @@ function ContactUs(){
             <div className="p-6">
                 <ContactForm />
             </div>
+            <p className="text-center font-display">
+            {" "}
+                <a href="mailto:contact@stolenstreetsigns.com" className="text-sand underline hover:text-bone">
+                    contact@stolenstreetsigns.com
+                </a>
+            </p>
+
         </div>
     );
 

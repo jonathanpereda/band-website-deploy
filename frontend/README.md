@@ -96,6 +96,8 @@ V12:
 Added Flask backend with contact endpoint
 V13:
 Set up and added basic contact form to contact us page.
+V14:
+Added email sending functionality via SendGrid for contact form.
 
 ### Author
 
