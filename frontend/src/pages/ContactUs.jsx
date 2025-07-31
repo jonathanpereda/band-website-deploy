@@ -1,4 +1,5 @@
 import HeaderSymbol from '../components/HeaderSymbol';
+import ContactForm from '../components/ContactForm';
 
 function ContactUs(){
     return(
@@ -18,7 +19,9 @@ function ContactUs(){
                     </span>
                 </h1>
             </div>
-            <div className="p-6"></div>
+            <div className="p-6">
+                <ContactForm />
+            </div>
         </div>
     );
 

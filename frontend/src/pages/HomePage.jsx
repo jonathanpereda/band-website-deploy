@@ -68,6 +68,7 @@ function HomePage() {
                 loading="lazy"
               />
             ) : (
+              //Place holder before embed loads in
               <div className="h-[352px] w-full bg-dark animate-pulse" />
             )}
           </div>
