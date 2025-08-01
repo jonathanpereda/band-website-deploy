@@ -1,5 +1,9 @@
 # Band Website
 
+[ > Live Site < ](https://www.stolenstreetsigns.com)
+
+<img src="./assets/screenshot.png" alt="Band Website Screenshot" width="400" style="margin-bottom: 20px;" />
+
 This is a full-stack website project for my band, built using React and Flask.
 The site includes announcements, show flyers, embedded music/video content, a contact form, photo galleries, and mobile compatibility.
 
