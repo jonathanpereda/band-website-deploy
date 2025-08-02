@@ -6,14 +6,14 @@ function ShowsGallery() {
     //Flyer Array
     const flyers = [
         {
-        src: "FlyerPhotos/ComingSoon.jpg",
-        alt: "Coming Soon",
+        src: "FlyerPhotos/costera-9-14.png",
+        alt: "Costera Flyer",
         cap: "Las Vegas, NV - 9/14/25",
         url: "https://tavernacostera.com/las-vegas-arts-district-taverna-costera-events",
-        date: "2025-09-06",
+        date: "2025-09-14",
         },
         {
-        src: "FlyerPhotos/voodoo-9-6.JPG",
+        src: "FlyerPhotos/voodoo-9-6.png",
         alt: "Voodoo Flyer",
         cap: "Las Vegas, NV - 9/6/25",
         url: "https://www.voodoobrewery.com/las-vegas-nv",
@@ -83,7 +83,7 @@ function ShowsGallery() {
         const handleScroll = () => {
             const { scrollLeft, scrollWidth, clientWidth } = container;
 
-            setShowLeft(scrollLeft > 8); //Buffer for left side
+            setShowLeft(scrollLeft > 30); //Buffer for left side
             setShowRight(scrollLeft + clientWidth < scrollWidth - 1);
         };
 
