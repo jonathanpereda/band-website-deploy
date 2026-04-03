@@ -6,6 +6,20 @@ function ShowsGallery() {
     //Flyer Array
     const flyers = [
         {
+        src: "FlyerPhotos/area15-5-16.png",
+        alt: "Area15 Flyer",
+        cap: "Las Vegas, NV - 5/16/26",
+        url: "https://area15.com/events/waitress-w-spring-breeding-stolen-street-signs/",
+        date: "2026-05-16",
+        },
+        {
+        src: "FlyerPhotos/usualplace-4-3.png",
+        alt: "Usual Flyer",
+        cap: "Las Vegas, NV - 4/3/26",
+        url: "https://www.eventbrite.com/e/pictures-of-sound-a-sonic-experience-bringing-sound-to-life-tickets-1985777235166?aff=ebdssbdestsearch",
+        date: "2026-04-03",
+        },
+        {
         src: "FlyerPhotos/costera-9-14.png",
         alt: "Costera Flyer",
         cap: "Las Vegas, NV - 9/14/25",

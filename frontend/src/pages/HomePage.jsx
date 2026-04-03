@@ -34,8 +34,8 @@ function HomePage() {
           <section>
             <h3 className="ml-4 mt-12 text-xl tracking-widest font-bodywide">Announcements:</h3>
             <ul className="list-disc list-inside space-y-2 ml-10 mt-4 mb-8 text-base font-body leading-relaxed">
-              <li>New song and music video coming soon.</li>
-              <li>Big things in the works.</li>
+              <li>New song 'Squilliam' coming April 17th.</li>
+              <li>'Top It Off' music video out now!</li>
             </ul>
           </section>
         </div>
