@@ -52,6 +52,8 @@ function ShowsGallery() {
     const today = new Date();
     const processedFlyers = flyers.map((flyer) => {
         const showDate = new Date(flyer.date);
+        // Move to end of the show's day
+        showDate.setHours(23, 59, 59, 999);
         const hasPast = showDate < today;
         return { ...flyer, hasPast };
     });
