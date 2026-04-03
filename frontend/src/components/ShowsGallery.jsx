@@ -51,10 +51,13 @@ function ShowsGallery() {
     //Process if flyer date has already past
     const today = new Date();
     const processedFlyers = flyers.map((flyer) => {
-        const showDate = new Date(flyer.date);
-        // Move to end of the show's day
-        showDate.setHours(23, 59, 59, 999);
-        const hasPast = showDate < today;
+        const [year, month, day] = flyer.date.split("-").map(Number);
+
+        // Local midnight at the START of the day after the show
+        const dayAfterShow = new Date(year, month - 1, day + 1);
+
+        const hasPast = today >= dayAfterShow;
+
         return { ...flyer, hasPast };
     });
 
